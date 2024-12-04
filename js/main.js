@@ -4,22 +4,26 @@ function onToggleMenu() {
     const elBody = document.querySelector('body')
     elBody.classList.toggle('menu-open')
 
+    const elJournal = document.querySelector('.journal-drop-down')
+    if (elJournal.classList.contains('shown')) {
+        elJournal.classList.remove('shown')
+    }
 
 }
 
-function onOpenModal(){
+function onOpenModal() {
     const elModal = document.querySelector('.modal')
     elModal.showModal()
 }
 
-function onCloseModal(ev){
+function onCloseModal(ev) {
     ev.preventDefault()
     const elModal = document.querySelector('.modal')
     elModal.close()
 }
 
-function onOpenDropDown(){
+function onToggelDropDown() {
     const elJournal = document.querySelector('.journal-drop-down')
-    elJournal.classList.toggle('opacity')
+    elJournal.classList.toggle('shown')
 
 }

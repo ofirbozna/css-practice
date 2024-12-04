@@ -3,9 +3,7 @@
     top: 100%;
     left: -110%;
     background-color: #000000d9;
-    opacity: 0;
+    opacity: 0;    
+    transition: opacity 500ms;
 }
 
-.journal:hover .journal-drop-down{
-    opacity: 1;
-}
