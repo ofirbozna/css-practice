@@ -1,0 +1,26 @@
+.pagination {
+    font-family: lato-bold;
+    font-size: 1.125rem;
+    line-height: 1.35;
+    text-transform: uppercase;
+    color: var(--crl-primary-3);
+    margin-block-start: 80px;
+    padding-block: 29px;
+    border-block-start: 1px solid var(--crl-primary-4);
+    cursor: pointer;
+}
+
+.pagination span:first-child {
+    grid-row: 1;
+}
+
+
+.pagination span:last-child {
+    grid-row: 1;
+    justify-self: end;
+
+}
+
+.pagination span:hover {
+    color: var(--crl-primary);
+}

@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    font-family: lato, serif;
+    color: var(--crl-primary);
+    line-height: 1.25;
+}
+
+body {
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.75em;
+    line-height: 1.07142857;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    color: var(--crl-primary)
+}

@@ -1,0 +1,30 @@
+.main-layout {
+    display: grid;
+    grid-template-columns: minmax(20px, 1fr) minmax(auto, 740px) minmax(20px, 1fr);
+
+}
+
+.main-layout>*:not(.full) {
+    grid-column: 2;
+}
+
+.main-layout>.full {
+    grid-column: 1/-1;
+}
+
+
+
+/* 
+HEADER LAYOUT */
+
+.main-header>* {
+    grid-row: 1;
+
+}
+
+/*CARD LAYOUT*/
+.main-content {
+    display: grid;
+    gap: 80px;
+
+}
