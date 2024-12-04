@@ -15,6 +15,7 @@
 @import url('../styles/components/pagination.css');
 @import url('../styles/components/footer.css');
 @import url('../styles/components/main-screen.css');
-
+@import url('../styles/components/modal.css');
+@import url('../styles/components/drop-down-nav.css');
 /* MQ */
 @import url('../styles/setup/mq.css');

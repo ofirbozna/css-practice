@@ -22,6 +22,11 @@
 
     body:not(.menu-open) .main-nav {
         transform: translateX(100%);
+        pointer-events: none;
+
+    }
+    .opacity{
+        opacity: 1;
     }
 
 }
@@ -55,6 +60,20 @@
         min-height: 8.3125em;
 
     }
+
+    .journal-drop-down {
+        position: absolute;
+        flex-direction: column;
+        top: 100%;
+        left: 0;
+        background-color: #000000d9;
+    }
+
+    .journal-drop-down li>a{
+        min-height: 4rem;
+    }
+
+    
 }
 
 

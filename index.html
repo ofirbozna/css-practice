@@ -12,21 +12,33 @@
 
 <body class="main-layout">
 
-    <div class="main-screen" onclick="toggleMenu()"></div>
+    <div class="main-screen" onclick="onToggleMenu()"></div>
 
 
     <header class="main-header full main-layout">
         <div class="logo">Blogin<span class="logo-dot">.</span></div>
         <nav class="main-nav">
             <ul class="clean-list">
-                <li><a href="#">Journal</a></li>
+                <li class="journal">
+                    <a  href="#" onclick="onOpenDropDown()">Journal</a>
+                    <ul class="journal-drop-down clean-list">
+                        <li><a href="#">October 2016</a></li>
+                        <li><a href="#">January 2017</a></li>
+                        <li><a href="#">April 2017</a></li>
+                        <li><a href="#">July 2017</a></li>
+                    </ul>
+                </li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Work</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
-        <button  onclick="toggleMenu()" class="nav-btn">☰</button>
+        <button onclick="onToggleMenu()" class="nav-btn">☰</button>
     </header>
+
+  
+        
+ \
 
 
     <main class="main-content">
@@ -41,7 +53,7 @@
                         sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate
                         velit esse cillum dolore eu fugiat nulla pariatur...</p>
-                    <button class="continue-reading-btn">Continue Reading</button>
+                    <button class="continue-reading-btn" onclick="onOpenModal()">Continue Reading</button>
                 </div>
             </div>
         </div>
@@ -55,7 +67,7 @@
                         sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate
                         velit esse cillum dolore eu fugiat nulla pariatur...</p>
-                    <button class="continue-reading-btn">Continue Reading</button>
+                    <button class="continue-reading-btn" onclick="onOpenModal()">Continue Reading</button>
                 </div>
             </div>
         </div>
@@ -70,11 +82,20 @@
                         sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate
                         velit esse cillum dolore eu fugiat nulla pariatur...</p>
-                    <button class="continue-reading-btn">Continue Reading</button>
+                    <button class="continue-reading-btn" onclick="onOpenModal()">Continue Reading</button>
                 </div>
             </div>
         </div>
     </main>
+
+    <dialog class="modal">
+        <form method="dialog">
+            <button class="close-modal" onclick="onCloseModal(event)">X</button>
+            <p>Join us to get access to the latest stories!</p>
+            <input type="email">
+            <button class="submit-btn">Join us!</button>
+        </form>
+    </dialog>
 
     <section class="pagination main-layout">
         <span> &larr; Previous</span>

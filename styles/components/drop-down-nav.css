@@ -1,0 +1,11 @@
+.journal-drop-down {
+    position: absolute;
+    top: 100%;
+    left: -110%;
+    background-color: #000000d9;
+    opacity: 0;
+}
+
+.journal:hover .journal-drop-down{
+    opacity: 1;
+}

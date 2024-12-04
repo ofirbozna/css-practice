@@ -48,11 +48,11 @@
     border-inline-end: 1px solid var(--crl-primary3);
 }
 
-.main-header li:hover::after {
+.main-nav li:hover::after {
     opacity: 1;
 }
 
-.main-nav li:hover a {
+.main-nav li:hover .main-nav li>a {
     color: var(--crl-secondary);
 
 }
